@@ -16,7 +16,7 @@ def validate_branch_and_pr_title(branch, pr_title):
     if not branch.startswith("TADocs-"):
         print(f"The branch '{branch}' does not start with the pattern 'TACS-'.")
         return False
-    # Verify if the branch contains with 'TADocs-'
+    # Verify if the branch contains with 'TACS-'
     if "TACS-" not in pr_title:
         print(f"The PR title '{pr_title}' does not contain the pattern 'TACS-'.")
         return False
